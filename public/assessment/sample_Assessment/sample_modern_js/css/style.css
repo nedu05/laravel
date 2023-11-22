@@ -1,0 +1,29 @@
+body{
+    height:745px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+}
+img{
+    height: 200px;
+    width:250px;
+}
+
+#example3 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 4px 8px black;
+  }
+
+.card:hover{
+    background-color: yellow;
+}
+
+.line{
+background-color: yellow;
+color: red;
+}
+
+.li{
+    background-color: whitesmoke;
+color:black;
+}

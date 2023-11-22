@@ -1,0 +1,47 @@
+<div class="container">
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">logout</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">signup</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#!login">login</a>
+    </li>
+  </ul>
+
+
+
+  <div class="row">
+
+
+    <div class="col">Generate colors</div>
+    <div class="col-6 p-3  border" ng-style="{'background-color':ncolor}"></div>
+    <div class="col"><button ng-click="addColors()" class="btn btn-success">add colors</button></div>
+
+
+  </div>
+
+  <small class="text-danger">{{message}}</small>
+
+
+
+  <p class="text-center">Welcome: {{vv}} </p>
+
+  <div class="row">
+    <button ng-click="preview() " class="mb-2">preview</button>
+
+
+    <div ng-if="show">
+      <div class="row dd mx-auto ">
+        <div class="col-6" ng-repeat="x in het" ng-style="{'background-color':x}"> </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>

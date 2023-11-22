@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Js</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="./assets/javascript/code.angularjs.org_1.8.2_angular-route.min.js"></script>
+</head>
+<body ng-app="app">
+
+
+  <!-- <div ng-controller="controller"> -->
+    <a   href="#!">main</a>
+    <a   href="#!login">login</a>
+
+    <!-- <a   href="#!students">students</a>
+
+    <a   href="#!viewstudent">viewstudent</a> -->
+
+    
+
+
+  <!-- </div> -->
+  <button ng-click="count = count + 1">Add one</button> {{ count }}
+  
+  <!-- template: // the component's markup
+  `
+   <button (click)="count = 0">Reset </button>
+  `, -->
+
+  <div ng-view>
+
+  </div>
+ 
+
+
+  <script src="./assets/javascript/script2.js"></script>
+</body>
+</html>

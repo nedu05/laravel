@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./javascript/ajax.googleapis.com_ajax_libs_angularjs_1.8.2_angular.min.js"></script>
+<script src="./javascript/code.jquery.com_jquery-3.7.0.min.js"></script>
+</head>
+<body >
+   <div ng-controller="controller">
+
+  
+   <!-- <ul>
+    <li ng-repeat="x in data">{{x.name}}</li>
+
+   </ul> -->
+   
+
+<!-- 
+   <div class="card" style="width: 18rem;"  ng-repeat="x in data">
+    <div class="card-header">
+   
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{x.name}}</li>
+      <li class="list-group-item">{{x.m1}}</li>
+      <li class="list-group-item">{{x.m2}}</li>
+      <li class="list-group-item">{{x.m3}}</li>
+      <li class="list-group-item">{{x.m4}}</li>
+      <li class="list-group-item">{{x.m5}}</li>
+    </ul>
+  </div> -->
+
+  <div>
+    <input type="text" ng-model="name">
+  <input type="number" ng-model="age">
+  
+  <button value="send " ng-click="post(name,age)">click it!</button>
+
+
+  </div>
+
+  <p>output</p>
+  <p>{{name}}</p>
+  <p>{{age}}</p>
+   </div>
+
+
+ <script src="./javascript/script.js"></script>
+
+
+</body>
+</html>

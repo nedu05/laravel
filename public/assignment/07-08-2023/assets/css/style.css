@@ -1,0 +1,12 @@
+h1{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+h2{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+a {                             /* Select all <a> elements (HTML links), */
+  color: orange;              /* change their text color to orange, */
+  background-color: pink;     /* their background color to pink, */
+  text-decoration: none;      /* and remove text decorations like underlines. */
+}

@@ -1,0 +1,25 @@
+body{
+  
+    background: lightblue url("./assets/images/img.jpg") no-repeat fixed center;
+  
+
+}
+
+.m{
+    margin-top: 60px;
+}
+
+.m2{
+
+    margin-top: 70px;
+    margin-left: 200px;
+   
+}
+
+.man{
+    margin: 150px;
+    margin-left: 0px;
+}
+ul{
+    list-style-type: none;
+}

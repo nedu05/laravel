@@ -1,0 +1,10 @@
+.head{
+    display: none;
+}
+.searchbar{
+    display: block !important;
+}
+
+.alert{
+    display: block !important;
+}

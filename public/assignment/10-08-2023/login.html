@@ -1,0 +1,32 @@
+<div class="col border p-3 text-center">
+
+    <form name="nsform">
+    
+      <div class="text-danger">
+      <span ng-show="nsform.usname.$touched &&  nsform.usname.$invalid">Enter the user name</span>
+      </div>
+      <input type="text" ng-model="usname" placeholder="username" name="usname" required><br><br>
+
+      <div class="text-danger">
+        <span ng-show="nsform.uspassword.$touched &&  nsform.uspassword.$invalid">Enter the password</span>
+        </div>
+    
+    <input type="password" ng-model="uspassword" placeholder="password" name="uspassword" required><br><br>
+    
+  <button class="btn btn-danger " > <a   href="#" class="text-light"> signup</a>   </button>
+
+
+           <button ng-click="login()"  class="btn btn-success rounded-4" ng-disabled="nsform.usname.$touched &&  nsform.usname.$invalid ||  
+           nsform.uspassword.$touched &&  nsform.uspassword.$invalid || mara " >   <a   href="#!product" class="text-light ">login</a> </button>
+
+
+
+    
+    
+        
+            </div>
+    
+    
+    </form>
+    
+        </div>

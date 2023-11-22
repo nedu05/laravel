@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+ <input type="text" placeholder="enter to find"> 
+    <button>click</button>
+   <ul>
+
+   </ul>
+   <p ></p> 
+<!-- 
+   <h2>JavaScript HTML DOM h2</h2>
+<h3>Remove an HTML Element h3.</h3>
+
+<div>
+<p id="p1">This is a paragraph p1.</p>
+<p id="p2">This is another paragraph.</p>
+</div> -->
+
+
+    <script>
+        var item = [
+  
+  { id: 1, tittle: "cd drive", image: `"./images/cd_drive.jpg"`, price: 2000 },
+  { id: 2, tittle: "cpu", image: `"./images/cpu.jpg"`, price: 600 },
+  { id: 3, tittle: "laptop", image: "./images/laptop.jpg", price: 5000 },
+  { id: 4, tittle: "pendrive", image: `"./images/pendrive.jpg"`, price: 1000 },
+  { id: 5, tittle: "ssd", image: "./images/ssd.jpg", price: 2000 },
+  { id: 6, tittle: "watch", image: "./images/watch.jpg", price: 4000 },
+  { id: 7, tittle: "smartphone", image: "./images/mobile.jpg", price: 10000 },
+  { id: 8, tittle: "computer", image: "./images/computer.jpg", price: 30000 },
+  { id: 9, tittle: "cd drive", image: "./images/tab.jpg", price: 10000 },
+  { id: 10, tittle: "mouse", image: "./images/mouse.jpg", price: 300 },
+  { id: 11, tittle: "keyboard", image: "./images/keyboard.jpg", price: 600 },
+  { id: 12, tittle: "headphone", image: `"./images/headphone.jpg"`, price: 800 },
+  { id: 12, tittle: "headphone", image: `"./images/headphone.jpg"`, price: 1200 }
+
+];
+
+
+
+
+        var btn=document.querySelector("button");
+        var getval=document.querySelector("input");  
+    
+
+
+    
+    btn.onclick=()=>{
+
+      if(getval.value.trim() == ""){
+        alert("please enter the value to search");
+      }
+
+    else{
+    const total= item.filter((inp)=> inp.tittle == getval.value);
+    console.log(total);
+    getval.value="";
+    }
+    }
+    </script>
+</body>
+</html>

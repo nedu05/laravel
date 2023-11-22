@@ -1,0 +1,40 @@
+img{
+   
+    width: 50px;
+}
+
+body{
+    background-color: rgb(242, 210, 242);
+}
+
+#create{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container5{
+    
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 4px grey;
+    background-color: azure;
+    border: 1px solid blue;
+    width: 300px;
+    height: 400px;
+
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: scroll;
+
+}
+
+.new{
+    background-color: azure;
+    display: none;
+    border: 1px solid blue;
+    width: 300px;
+    height: 300px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+}

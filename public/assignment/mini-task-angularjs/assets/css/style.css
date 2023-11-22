@@ -1,0 +1,28 @@
+.signupPage{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+/* button {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  } */
+
+  #box{
+    width: 800px !important ;
+    height: 45px;
+
+    background:red;
+  }
+
+  .ss{
+    height: 100px;
+    width: 100px;
+  }
+
+  .dd{
+    width: 600px;
+    height: 450px;
+  }

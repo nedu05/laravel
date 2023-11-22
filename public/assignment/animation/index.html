@@ -1,0 +1,139 @@
+<div class="main-container">
+	<div class="check-container">
+		<div class="check-background">
+			<svg viewBox="0 0 65 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7 25L27.3077 44L58.5 7" stroke="white" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</div>
+		<div class="check-shadow"></div>
+	</div>
+</div>
+
+<!-- share button -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+<div class="share">
+	<span><i class="fas fa-share-alt"></i> Share</span>
+	<a href="#"><i class="fab fa-facebook"></i></a>
+	<a href="#"><i class="fab fa-pinterest"></i></a>
+	<a href="#"><i class="fab fa-whatsapp"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+	<!-- share button -->
+
+
+
+	<!-- add to cart button -->
+	<button class="add-to-cart">
+	
+		<div class="default">Tambahkan</div>
+	
+		<div class="success">Done</div>
+	
+		<div class="cart">
+	
+			<div>
+	
+				<div></div>
+	
+				<div></div>
+	
+			</div>
+	
+		</div>
+	
+		<div class="dots"></div>
+	
+	</button>
+	
+	<script>
+		document.querySelectorAll('.add-to-cart').forEach(button => {
+
+			button.addEventListener('click', e => {
+
+				button.classList.toggle('added');
+			});
+
+		});
+	</script>
+	<!-- add to cart button -->
+
+
+	<!-- login button -->
+	<div id="button">
+		<span id="icon">
+		  <ion-icon name="airplane"></ion-icon>
+		</span>
+		<span id="text">login</span>
+	  </div>
+
+	  <script>
+
+let button = document.querySelector('#button');
+let text = document.querySelector('#text');
+let icon = document.querySelector('#icon');
+if(icon.className.includes('send')){
+  icon.classList.remove('send');
+}
+button.addEventListener('click', (e)=>{
+  e.stopPropagation(); 
+  if(icon.className.includes('send')){
+     return;
+   }
+  icon.className += 'send';
+  setTimeout(()=>{
+    text.innerText = 'signup';  
+  },1000);
+  
+  setTimeout(()=>{
+    text.innerText = 'signup';  
+  }, 2500);
+});
+
+	  </script>
+	<!-- login button -->
+
+	<!-- order button -->
+
+	<div class="content">
+		<button class="button">Process My Order!   <span class="loader"></span></button>
+	  </div>
+
+	  <script>
+		const button = document.querySelector(".button");
+
+const btnTl = new TimelineMax({
+  paused: true
+});
+
+const animateButton = btnTl
+  .to(".button", 0.2, { height: 4, background: "rgba(1, 171, 234, .2)" })
+  .to(".loader", 1.35, { width: "100%" }, "loader")
+  .to(
+    ".button",
+    0.2,
+    {
+      height: 80,
+      border: "2px solid rgba(1, 171, 234, 1)",
+      background: "none",
+      color: "rgba(1, 171, 234, 1)",
+      lineHeight: '72px',
+      text: "Order Success!"
+    },
+    "loader+=4"
+  )
+  .to(".loader", 0, { alpha: 0 }, "loader+=3.5");
+
+button.addEventListener("click", () => {
+  animateButton.play();
+});
+
+	  </script>
+	<!-- order button -->
+
+	<!-- search bar -->
+
+	<div class="container">
+		<input type="text" placeholder="Search...">
+		<div class="search"></div>
+	  </div>
+	<!-- search bar -->

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container m-3">
+        <div class="row">
+            <div class="col border p-4 border-2">
+                <div class="row">
+                    <div class="col"><button class="btn btn-danger" id="generator">generator</button></div>
+                    <div class="col rectangle text-center fs-4 border" id="rec" >GENERATED COLORS</div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-center m-2">
+                    <button class="btn btn-success m-1" id="add1">Add</button>
+                    <button class="btn btn-danger m-1" id="remove1">Remove</button>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-center">
+                    <ul id="get">
+            
+                    </ul>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-center m-2">
+                    <button class="btn btn-success m-1" id="add2" >Add</button>
+                    <button class="btn btn-danger m-1" id="remove2">Remove</button>
+                </div>
+                <div class="d-flex justify-content-center m-2">
+                    <button class="btn btn-danger m-1" id="red">Red sort</button>
+                    <button class="btn btn-success m-1" id="green">Green sort</button>
+                    <button class="btn btn-info m-1" id="blue">blue sort</button>
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-success" id="copy">Copy-List</button>
+                    <label class="h6">start</label>
+                    <input type="number" id="start">
+                    <label class="h6">end</label>
+                    <input type="number" id="end">
+                </div>
+                <div class="mt-2">
+                    <button class="btn btn-success" id="move">Move-List</button>
+                    <label class="h6">start</label>
+                    <input type="number" id="start2">
+                    <label class="h6" >#of items ?</label>
+                    <input type="number" id="item">
+                </div>
+            </div>
+            <div class="col ms-3">
+                <div class="row">
+                 <ul id="show1">
+
+                 </ul>
+                </div>            
+            </div>
+        </div>
+    </div>       
+    <script src="./javascript/script.js"> </script>
+</body>
+</html>

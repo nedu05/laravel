@@ -1,0 +1,65 @@
+{
+	"students": [
+		{   
+
+		    "img":"./images/student-3.jpg",
+			"name": "John",
+			"id": "001",
+			"m1": 10,
+			"m2": 65,
+			"m3": 34,
+			"m4": 55,
+			"m5": 55
+		},
+		{
+			"img":"./images/student-3.jpg",
+			"name": "Praveen",
+			"id": "002",
+			"m1": 75,
+			"m2": 65,
+			"m3": 55,
+			"m4": 75,
+			"m5": 55
+		},
+		{  "img":"./images/student-3.jpg",
+			"name": "Somesh",
+			"id": "003",
+			"m1": 75,
+			"m2": 65,
+			"m3": 55,
+			"m4": 55,
+			"m5": 77
+		},
+		{   "img":"./images/student-3.jpg",
+			"name": "Mebin",
+			"id": "004",
+			"m1": 75,
+			"m2": 65,
+			"m3": 25,
+			"m4": 56,
+			"m5": 55
+		},
+		{   "img":"./images/student-3.jpg",
+			"name": "Jose",
+			"id": "005",
+			"m1": 75,
+			"m2": 65,
+			"m3": 87,
+			"m4": 55,
+			"m5": 89
+		},
+		{   "img":"./images/student-3.jpg",
+			"name": "Jack",
+			"id": "006",
+			"m1": 15,
+			"m2": 65,
+			"m3": 87,
+			"m4": 55,
+			"m5": 89
+		}
+	]
+}
+
+
+
+

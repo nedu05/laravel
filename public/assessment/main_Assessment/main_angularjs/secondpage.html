@@ -1,0 +1,85 @@
+<div class="container mx-auto mt-3">
+<!-- ============ user welcome =============-->
+    <h1>Welcome : {{user | uppercase}}</h1>
+
+<!-- ============ buttons =============-->
+    <div class="text-center m-3">
+        <button ng-click="movies()" class="btn btn-dark text-light">Show</button>
+        <button ng-click="snacks()" class="btn btn-dark text-light"> bevarage</button>
+    </div>
+
+<!-- ============ Ticket booking =============-->
+    <div ng-show="trnd">
+        <table class="table border text-center">
+            <thead>
+                <tr>
+                    <th>Movie</th>
+                    <th>Show time</th>
+                    <th>Available tickets</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in movie" ng-click="texas(x)">
+                    <td> {{x.movie}}</td>
+                    <td>{{x.time}}</td>
+                    <td> {{x.avaiable}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- ============ bevarage =============-->
+    <div ng-show="cookie">
+        <table class="table border text-center">
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Rate</th>
+                    <th>Quantity</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="y in bevarage ">
+                    <td> {{y.item}}</td>
+                    <td>{{y.rate}}</td>
+                    <td ng-init="price=0"> <input type="number" ng-model="y.price" ng-change="total(y.price)" min="0">
+                    </td>
+                    <td>{{y.price*y.rate}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3> Bevarage : {{snackamt}}</h3>
+        <div class="text-center">
+            <button class="btn btn-success" ng-click="select()">select</button>
+        </div>
+    </div>
+
+<!-- ============ total cost display =============-->    
+    <div ng-show="tickets">
+        <h5 class="text-center"> Select number of tickets for {{movive}}</h5>
+        <div>
+            <table class="table  text-center">
+                <tr>
+                    <th>{{cost}}</th>
+                    <th> x </th>
+                    <th ng-init="amt=0 ;snackamt=0"><input type="number" ng-model="amt" ng-change="hree(amt)" min="0">
+                    </th>
+                    <th> {{cost*amt}} </th>
+                </tr>
+            </table>
+            <div class="text-center">
+                <h5 class="text-danger"> {{throwmsg }}</h5>
+            </div>
+        </div>
+        <div class="text-center">
+            <h5> Ticket amount : {{cost*amt}} </h5>
+            <h5> bevarage : {{snackamt}} </h5>
+            <h5>Total {{cost*amt+snackamt}}</h5>
+        </div>
+
+         <!-- ============ pay button =============-->
+        <div class="text-center">
+            <button class="btn btn-success" ng-click="pay()" ng-disabled="hga">pay</button>
+        </div>
+    </div>
+</div>

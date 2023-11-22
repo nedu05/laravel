@@ -1,0 +1,26 @@
+
+<div class="container my-3">
+    <table class="table  border ">
+
+        <tr >
+            <th class="border">ID</th>
+            <th class="border">user_name</th>
+            <th class="border">password</th>
+            <th class="border">Preview</th>
+        </tr>
+       
+        <tr ng-repeat="x in hh" class="border">
+            <td class="border"> {{x.id}} </td>
+            <td class="border"> {{x.name}} </td>
+            <td class="border"> {{x.password}} </td>
+    
+           <td class="row ss mx-auto " >        
+                <div class="col-6 " ng-repeat="y in x.color" ng-style="{'background-color':y}"> </div>            
+           </td>
+           
+        </tr>
+    </table>
+    
+</div>
+
+

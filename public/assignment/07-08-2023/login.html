@@ -1,0 +1,21 @@
+
+    <form >
+        <h1>Login Form</h1>
+        <div class="form-control">
+            <input  type="text" placeholder="Username" ng-model="name">  {{name}}         
+        </div>  
+
+        <div class="form-control">
+            <input  type="password" placeholder="Password" ng-model="password">   {{password}}        
+        </div>
+
+        
+        <button type="submit" class="btn-submit" ng-click="submit()">signup</button>
+        <button><a   href="#!students">login</a> </button>
+        
+
+        <div class="signup-link" ng-click="signup()">
+        </div>
+
+       
+    </form>

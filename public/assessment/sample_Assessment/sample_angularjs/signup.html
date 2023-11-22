@@ -1,0 +1,63 @@
+<div class="container d-flex justify-content-center  w-25 signupPage">
+
+    <form name="signup" ng-submit="submitForm()" class="m-3 text-center text-danger" novalidate>
+      <h4 class="m-3 text-center text-info">Register</h4>
+      <div class="m-3 ">
+        <input type="text" name="username" ng-model="username" placeholder="username" class="rounded-pill text-center"
+          required>
+        <div ng-if="signup.username.$dirty && signup.username.$invalid">
+          <div ng-if="signup.username.$error.required"> username is required</div>
+        </div>
+      </div>
+  
+  
+      <div class="m-3">
+        <input type="email" name="email" ng-model="email" placeholder="Email-Id" class="rounded-pill text-center"
+          required>
+        <div ng-if="signup.email.$dirty && signup.email.$invalid">
+          <div ng-if="signup.email.$error.required"> email is required</div>
+          <div ng-if="signup.email.$error.email">invalid Email</div>
+        </div>
+      </div>
+     
+
+
+  
+      <div class="m-3">
+        <input type="number" class="rounded-pill text-center" name="acc" ng-model="acc" placeholder="acc"
+          ng-minlength="3" ng-maxlength="5" required>
+        <div ng-if="signup.acc.$dirty && signup.acc.$invalid">
+          <div ng-if="signup.acc.$error.required">acc is required</div>
+          <div ng-if="signup.acc.$error.minlength"> acc is Too short!</div>
+          <div ng-if="signup.acc.$error.maxlength"> acc is Too hign!</div>
+        </div>
+      </div>
+
+      <div class="m-3">
+        <input type="text"  class="rounded-pill text-center" name="upi" ng-model="nn" placeholder="upi" disabled >
+        <div ng-if="signup.upi.$dirty && signup.upi.$invalid">
+            <div ng-if="signup.upi.$error.required">upi not generate</div>
+
+      </div>
+
+
+
+
+
+      <small class="fs-3">{{message}}</small>
+      <div>
+
+
+
+
+        <small class="m-3">Already have account?<a href="#!login">Login</a></small>
+      </div>
+ 
+     
+      
+      <div class="m-3 d-flex justify-content-center">
+        <button type="submit" ng-disabled="signup.$invalid" class="btn btn-success ">signup</button>
+      </div>
+      
+    </form>
+  </div>

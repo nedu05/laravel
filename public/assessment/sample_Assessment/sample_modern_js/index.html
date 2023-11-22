@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+  <div class="container">
+    <div class="m-3">
+  <label >Filter</label>
+  <input type="search" id="getval" onchange="search()">
+</div>
+
+
+<div class="row ">
+  <div class="col">
+    <div id="filteredValue"></div>
+    <div class="row g-2 border text-center" id="left"></div>
+  </div>
+
+  
+
+
+
+  <div class="col border g-2">
+
+
+
+    <div class="row g-3 m-3 w-100 text-center">
+      <div >
+        <label>Name</label>
+        <input type="search" class="w-50 acs ms-3"  id="gname"   disabled >
+      </div>
+      <div >
+        <label>Id</label>              
+        <input type="search" class="w-50 acs ms-5"  id="sid"   disabled>
+      </div>
+      <div >
+        <label>m1</label>
+        <input type="number" class="w-50 ms-5 acs a" max="100"  min="0"  id="m1"  disabled>   
+      </div>
+      <div >
+      <label>m2</label>
+        <input type="number" class="w-50 ms-5 acs a" max="100"  min="0"  id="m2" disabled>
+      </div>
+      <div >
+      <label class="me-2">m3</label>
+        <input type="number" class="w-50 ms-5 acs a"  max="100"   min="0"   id="m3" disabled >
+      </div>
+      <div >
+      <label >m4</label>
+        <input type="number" class="w-50 ms-5 acs a"  max="100" min="0"  id="m4" disabled>
+      </div>
+      
+      <div >
+      <label >m5</label>
+        <input type="number" class="w-50 ms-5 acs a"  max="100" min="0"  id="m5" disabled>
+      </div>
+      
+      <div class="text-center m-2">
+      <button class="btn btn-danger "  onclick="edit()">edit</button>
+      <button class="btn btn-success "  onclick="save()">save</button>
+     
+      </div>
+      </div>
+  </div>
+</div>
+
+
+  </div>
+  </div>
+   
+<script src="./javascript/jquery.js"></script>
+<script src="./javascript/bootstrap.min.js"></script>
+<script src="./javascript/pluginFile.js"></script>
+<script src="./javascript/script.js"></script>
+</body>
+</html>
+

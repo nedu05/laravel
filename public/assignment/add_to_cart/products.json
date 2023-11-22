@@ -1,0 +1,36 @@
+
+	[
+		{
+			"id": "1",			
+			"name": "cd_drive ",
+			"img": "./images/cd_drive.jpg",
+			"price":20000
+		},	
+		{
+			"id": "2",			
+			"name": "computer",
+			"img":"./images/computer.jpg",
+			"price":15000
+		},	
+		{
+			"id": "3",			
+			"name": "cpu",
+			"img": "./images/cpu.jpg",
+			"price":80000
+		},	
+		{
+			"id": "4",			
+			"name": "headphone",
+			"img": "./images/headphone.jpg",
+			"price":17000
+		},		
+		{
+			"id": "5",			
+			"name": "keyboard",
+			"img":"./images/keyboard.jpg",
+			"price":16000
+		}
+	
+
+	]
+	

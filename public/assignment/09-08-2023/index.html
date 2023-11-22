@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Document</title>
+  <script src="./assets/javascript/ajax.googleapis.com_ajax_libs_angularjs_1.8.2_angular.min.js"></script>
+ 
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+<body ng-app="app">
+<!-- <a href="#!">pink</a> -->
+
+  
+  <div class="container p-3" ng-controller="ctrl" >
+    
+    <div class="row p-3">
+      <div class="col border  p-3 text-center">
+        <form novalidate name="myForm" ng-init="switch=false" ng-disabled="mara" >
+   
+          <div ng-click="disabled()">
+            <input type="text" ng-model="name"  placeholder="username" name="nameval"   ng-disabled="mara" required>
+          </div><br><span ng-show="myForm.nameval.$touched &&  myForm.nameval.$invalid"> Required!</span>
+          
+          
+          <div ng-click="disabled()">
+          <input type="email" ng-model="email"  placeholder="email"  name="input" ng-disabled="mara" required>
+          </div><br>
+          <span ng-show="myForm.input.$touched &&  myForm.nameval.$invalid" > Required!</span>
+            <span ng-show="myForm.input.$error.email">Not valid email!</span>
+
+          <div ng-click="disabled()">
+            <input type="password" ng-model="password" placeholder="password" name="pwd" ng-minlength="2" ng-maxlength="3" ng-disabled="mara" required>
+          </div> <br>
+
+
+
+
+
+          <div>
+            <span ng-show="myForm.pwd.$error.minlength" >
+             <ul class='text-danger'>
+            <p>too short!</p>
+             
+             </ul>
+            </span>
+          <span ng-show="myForm.pwd.$error.maxlength" class="text-danger">too high!</span>
+          </div>
+         
+          <div ng-click="disabled()">
+            <button ng-click="create()"  class="btn btn-success rounded-4" ng-disabled="myForm.nameval.$dirty && myForm.nameval.$invalid ||  
+            myForm.input.$dirty && myForm.input.$invalid || myForm.pwd.$dirty && myForm.pwd.$invalid || mara " >create</button>
+
+
+           
+          
+          </div>
+          
+           </form>
+      
+      </div>
+
+      
+      <div class="col border p-3 text-center">
+
+<form name="nsform">
+
+  <input type="text" ng-model="usname" placeholder="username" name="usname"> <br><br>
+
+<input type="password" ng-model="uspassword" placeholder="password" name="uspassword"><br><br>
+
+       <button class="btn btn-success" > Signup</button>
+       <button class="btn btn-danger" ng-click="login()"> login</button>
+<p ng-show="alert"></p>
+
+
+       <!-- <p ng-show="nsform.usname.  ">wrong login </p> -->
+        </div>
+
+
+</form>
+
+    </div>
+
+
+
+
+
+
+
+   </div>
+
+
+  <script src="./assets/javascript/script.js"></script>
+
+</body>
+</html>

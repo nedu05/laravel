@@ -1,0 +1,9 @@
+.iconcolor{
+    color: white;
+}
+.grey{
+    background-color: #f5f5f5;
+}
+.tick{
+    list-style-image: url("../images/tick.jpg");
+}
